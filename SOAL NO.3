@@ -1,0 +1,30 @@
+/*
+ * Click nbfs://nbhost/SystemFileSystem/Templates/Licenses/license-default.txt to change this license
+ * Click nbfs://nbhost/SystemFileSystem/Templates/Classes/Class.java to edit this template
+ */
+package com.mycompany.utsdsnadhif;
+import java.util.ArrayList;
+import java.util.List;
+/**
+ *
+ * @author Nadhif Nizar
+ */
+public class NOMER3 {
+    public static void main(String[] args) {
+
+        List<Mahasiswa> MahasiswaList = new ArrayList<>();
+        MahasiswaList.add(new Mahasiswa(1245, "Dian Nurdiani", "TIFRM22A", 191122));
+        MahasiswaList.add(new Mahasiswa(1274, "William Pradana P", "TIFRM22A", 191122));
+        MahasiswaList.add(new Mahasiswa(1345, "Sandesh Arya", "TIFRM22A", 191122));
+        MahasiswaList.add(new Mahasiswa(1647, "Diat Suhara", "TIFRM22A", 191122));
+        MahasiswaList.add(new Mahasiswa(1523, "Aditya Ramadhan", "TIFRM22A", 191122));
+
+        MahasiswaList.forEach(Mahasiswa -> System.out.println(Mahasiswa.toString()));
+        System.out.println("Panjang Data Mahasiswa -> " + MahasiswaList.size());
+        MahasiswaList.remove(0);
+
+        MahasiswaList.forEach(Mahasiswa -> System.out.println(Mahasiswa.toString()));
+        System.out.println("Panjang Data Mahasiswa -> " + MahasiswaList.size()); 
+    }
+
+}
